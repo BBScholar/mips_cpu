@@ -1,39 +1,46 @@
 
-module cpu(clk);
+module cpu(clk, rst, mem_write, mem_address, mem_write_data, mem_read_data);
 	localparam width = 32;
 	localparam double_width = 64;
 	
 	// clk input
-	input clk;
+	input clk, rst;
+	input [width - 1:0] mem_read_data;
 	
-	// generate slowly clock
-	wire slow_clk;
+	output mem_write;
+	output [width - 1:0] mem_address, mem_write_data;
+	
+	// generate slow clock
+	reg slow_clk;
+	initial
+		slow_clk = 1;
 	
 	always @ (posedge clk) slow_clk = !slow_clk;
 	
 	// register nets
-	wire [31:0] pc_out;
+	wire [31:0] pc_in, pc_out;
 	
-	wire [63:0] hilo_out;
+	wire [63:0] hilo_in, hilo_out;
 	wire [31:0] hi_out, lo_out;
 	
 	// 32 bit program counter
 	register #(.width(32)) pc_register(
-		.clk(clk),
-		.d(),
+		.clk(slow_clk),
+		.rst(rst),
+		.d(pc_in),
 		.write(1'b1),
 		.q(pc_out)
 	);
 	
 	// exception handling registers
 	// ignore for now
-	register #(.width(32)) epc_register();
-	register #(.width(32)) cause_register();
+	// register #(.width(32)) epc_register();
+	// register #(.width(32)) cause_register();
 	
 	// double wide register for mult/div operations
 	hilo hilo_register(
-		.clk(clk),
-		.d(),
+		.clk(slow_clk),
+		.d(hilo_in),
 		.write(),
 		.q(hilo_out)
 	);
@@ -80,7 +87,7 @@ module cpu(clk);
 	mux2x1 pc_mux1(
 		.a(pc_p4),
 		.b(pc_p4_pimm),
-		.s(), // TODO: branch here
+		.s(0), // TODO: branch here
 		.out(pc_paths[0])
 	);
 	
@@ -88,24 +95,69 @@ module cpu(clk);
 	mux2x1 pc_mux2(
 		.a(pc_paths[0]),
 		.b(jump_final),
-		.s(), // TODO: jump here
+		.s(0), // TODO: jump here
 		.out(pc_paths[1])
 	);
 	
 	// jump register mux
-	mux2x1 pc_mux3();
+	mux2x1 pc_muxs3(
+		.a(pc_paths[1]),
+		.b(32'b0), // TODO: fix this
+		.s(0), // TODO: implement thos
+		.out(pc_paths[2])
+	);
 	
 	// overflow exception mux
 	mux2x1 pc_mux4(
-		.a(),
-		.b(),
-		.s(),
-		.out()
+		.a(pc_paths[2]),
+		.b(32'h8000_0180),
+		.s(0), // TODO: handle this
+		.out(pc_paths[3])
 	);
 	
-	//
-	mux2x1 pc_mux5();
+	// invalid opcode mux
+	mux2x1 pc_mux5(
+		.a(pc_paths[3]),
+		.b(32'h8000_000),
+		.s(0), // TODO: handle this
+		.out(pc_paths[4])
+	);
 	
+	// trap jump mux
+	mux2x1 pc_mux6(
+		.a(pc_paths[4]),
+		.b(32'h0000_0000), // TODO: edit this
+		.s(0), // TODO: handle this
+		.out(pc_paths[5])
+	);
+	
+	assign pc_in = pc_paths[5];
+	
+	// ========== Memory Load/Store ================
+	
+	wire [31:0] mem_read_result, mem_write_internal;
+	
+	load_unit load_unit(
+		.address(mem_address),
+		.read_data(mem_read_data),
+		.byte(0),
+		.half(0),
+		.is_unsigned(1),
+		.out(mem_read_result)
+	);
+	
+	store_unit store_unit(
+		.address(mem_address),
+		.read_data(mem_read_data),
+		.write_data(mem_write_internal),
+		.byte(0),
+		.half(0),
+		.out(mem_write_data)
+	);
+	
+	assign mem_write = 0;
+	assign mem_address = pc_out;
+	assign instruction = mem_read_data;	
 	
 	// ========== Register file stuff ================
 	// read_reg2 sources
@@ -142,11 +194,12 @@ module cpu(clk);
 	
 	register_file register_file(
 		.clk(clk),
+		.rst(rst),
 		.read_reg1(rs),
 		.read_reg2(rt),
-		.write_reg(),
-		.write(), // cpu control
-		.write_data()
+		.write_reg(rd),
+		.write(0), // cpu control
+		.write_data(32'b0)
 	);
 	
 	// ========== Data Manipulation =================

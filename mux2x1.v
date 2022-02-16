@@ -11,8 +11,6 @@ module mux2x1
 	output wire [data_width - 1:0] out;
 	
 	wire [data_width - 1:0] result1, result2, result3;
-
-	// assign out = result3;
 	
 	// if s == 0, return a
 	// else return b

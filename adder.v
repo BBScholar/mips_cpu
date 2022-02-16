@@ -1,9 +1,8 @@
 
 // simple adder for places that do not need a full alu
-module adder(clk, a, b, out, zero, overflow);
+module adder(a, b, out, zero, overflow);
 	parameter width = 32;
-	
-	input clk;
+
 	input [width - 1: 0] a, b;
 	
 	output reg [width - 1:0] out;

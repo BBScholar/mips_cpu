@@ -11,6 +11,7 @@ module ALU(clk, a, b, ctl, out, zero, overflow);
 	output zero, overflow;
 	
 	assign zero = (out == 0);
+	assign overflow = 0;
 	
 	always @ (a or b or ctl) // we can change this later, not sure what I need
 	begin

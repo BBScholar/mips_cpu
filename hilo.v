@@ -1,25 +1,40 @@
 
 
-module hilo(clk, d, write, q);
-	input clk;
+module hilo(clk, rst, d, write, q);
+	
+	input clk,rst;
 	input [1:0] write;
 	input [63:0] d;
 	
-	output reg [63:0] q;
+	output [63:0] q;
 	
-	reg [31:0] upper_internal, lower_internal;
+	// internal nets
+	wire [31:0] d_upper, d_lower;
+	wire [63:0] d_final;
 	
-	always @ (posedge clk) begin
-			q <= {upper_internal, lower_internal};
-	end
+	assign d_upper = d[63:32];
+	assign d_lower = d[31:0];
 	
-	always @ (negedge clk) begin
-		if(write[0])
-			lower_internal <= d[31:0];
-		
-		if(write[1])
-			upper_internal <= d[63:32];
-			
-	end
+	mux2x1 upper_mux(
+		.a(q[63:32]),
+		.b(d_upper),
+		.s(write[1]),
+		.out(d_final[63:32])
+	);
+	
+	mux2x1 lower_mux(
+		.a(q[31:0]),
+		.b(d_lower),
+		.s(write[0]),
+		.out(d_final[31:0])
+	);
+	
+	register #(.width(64)) internal_register(
+		.clk(clk),
+		.rst(rst),
+		.d(d_final),
+		.write(|write),
+		.q(q)
+	);
 	
 endmodule

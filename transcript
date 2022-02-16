@@ -1,0 +1,286 @@
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/adder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/alu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/barrel_shifter.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module barrel_shifter
+# 
+# Top level modules:
+# 	barrel_shifter
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/comparator.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module comparitor
+# 
+# Top level modules:
+# 	comparitor
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/cpu.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/cpu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module cpu_control
+# 
+# Top level modules:
+# 	cpu_control
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/data_reverser.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module data_reverser
+# 
+# Top level modules:
+# 	data_reverser
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/encoder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module priority_encoder
+# 
+# Top level modules:
+# 	priority_encoder
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/fast_multiply.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module fast_mult
+# 
+# Top level modules:
+# 	fast_mult
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/hilo.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module hilo
+# 
+# Top level modules:
+# 	hilo
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/load_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module load_unit
+# -- Compiling module store_unit
+# 
+# Top level modules:
+# 	load_unit
+# 	store_unit
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/mult_div.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module mul_div
+# 
+# Top level modules:
+# 	mul_div
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/mux2x1.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module mux2x1
+# 
+# Top level modules:
+# 	mux2x1
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/mux4x1.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module mux4x1
+# 
+# Top level modules:
+# 	mux4x1
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/register.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module register
+# 
+# Top level modules:
+# 	register
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/register_file.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module register_file
+# 
+# Top level modules:
+# 	register_file
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/sign_extend.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/sim_cpu.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module sim_cpu
+# 
+# Top level modules:
+# 	sim_cpu
+# 
+# 
+# vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/simulation_memory.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Compiling module sim_memory
+# 
+# Top level modules:
+# 	sim_memory
+# 
+# 
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.sim_cpu
+# vsim -gui work.sim_cpu 
+# Start time: 15:53:51 on Feb 16,2022
+# Loading work.sim_cpu
+# Loading work.cpu
+# Loading work.register
+# Loading work.hilo
+# Loading work.mux2x1
+# Loading work.sign_extend
+# Loading work.adder
+# Loading work.load_unit
+# Loading work.mux4x1
+# Loading work.store_unit
+# Loading work.register_file
+# Loading work.barrel_shifter
+# Loading work.data_reverser
+# Loading work.ALU
+# Loading work.comparitor
+# Loading work.sim_memory
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'hilo_register'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/hilo_register File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 41
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(41): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pc_adder1'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/pc_adder1 File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 83
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(83): [TFMPC] - Missing connection for port 'zero'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(83): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'pc_adder2'.  Expected 5, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/pc_adder2 File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 84
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(84): [TFMPC] - Missing connection for port 'zero'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(84): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 's'. The port definition is at: C:/Users/bens/Documents/MipsCPU/mux2x1.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/pc_mux1 File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 87
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 's'. The port definition is at: C:/Users/bens/Documents/MipsCPU/mux2x1.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/pc_mux2 File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 95
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 's'. The port definition is at: C:/Users/bens/Documents/MipsCPU/mux2x1.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/pc_muxs3 File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 103
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 's'. The port definition is at: C:/Users/bens/Documents/MipsCPU/mux2x1.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/pc_mux4 File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 111
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 's'. The port definition is at: C:/Users/bens/Documents/MipsCPU/mux2x1.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/pc_mux5 File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 119
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 's'. The port definition is at: C:/Users/bens/Documents/MipsCPU/mux2x1.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/pc_mux6 File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 127
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'byte'. The port definition is at: C:/Users/bens/Documents/MipsCPU/load_unit.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/load_unit File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 140
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'half'. The port definition is at: C:/Users/bens/Documents/MipsCPU/load_unit.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/load_unit File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 140
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'is_unsigned'. The port definition is at: C:/Users/bens/Documents/MipsCPU/load_unit.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/load_unit File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 140
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'a'. The port definition is at: C:/Users/bens/Documents/MipsCPU/mux4x1.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/load_unit/result_mux File: C:/Users/bens/Documents/MipsCPU/load_unit.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'c'. The port definition is at: C:/Users/bens/Documents/MipsCPU/mux4x1.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/load_unit/result_mux File: C:/Users/bens/Documents/MipsCPU/load_unit.v Line: 70
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'byte'. The port definition is at: C:/Users/bens/Documents/MipsCPU/load_unit.v(81).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/store_unit File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 149
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'half'. The port definition is at: C:/Users/bens/Documents/MipsCPU/load_unit.v(81).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/store_unit File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 149
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'register_file'.  Expected 9, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/register_file File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 195
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'write'. The port definition is at: C:/Users/bens/Documents/MipsCPU/register_file.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/register_file File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 195
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'write_data'. The port definition is at: C:/Users/bens/Documents/MipsCPU/register_file.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/register_file File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 195
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(195): [TFMPC] - Missing connection for port 'read_data1'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(195): [TFMPC] - Missing connection for port 'read_data2'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'shifter'.  Expected 5, found 0.
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/shifter File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 207
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(207): [TFMPC] - Missing connection for port 'in'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(207): [TFMPC] - Missing connection for port 'shift'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(207): [TFMPC] - Missing connection for port 'left'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(207): [TFMPC] - Missing connection for port 'logical'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(207): [TFMPC] - Missing connection for port 'out'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'alu'.  Expected 7, found 0.
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/alu File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 208
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(208): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(208): [TFMPC] - Missing connection for port 'a'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(208): [TFMPC] - Missing connection for port 'b'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(208): [TFMPC] - Missing connection for port 'ctl'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(208): [TFMPC] - Missing connection for port 'out'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(208): [TFMPC] - Missing connection for port 'zero'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(208): [TFMPC] - Missing connection for port 'overflow'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'compare'.  Expected 8, found 0.
+#    Time: 0 ps  Iteration: 0  Instance: /sim_cpu/cpu/compare File: C:/Users/bens/Documents/MipsCPU/cpu.v Line: 209
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(209): [TFMPC] - Missing connection for port 'a'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(209): [TFMPC] - Missing connection for port 'b'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(209): [TFMPC] - Missing connection for port 'lt'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(209): [TFMPC] - Missing connection for port 'eq'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(209): [TFMPC] - Missing connection for port 'neq'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(209): [TFMPC] - Missing connection for port 'gt'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(209): [TFMPC] - Missing connection for port 'lte'.
+# ** Warning: (vsim-3722) C:/Users/bens/Documents/MipsCPU/cpu.v(209): [TFMPC] - Missing connection for port 'gte'.
+add wave -position insertpoint sim:/sim_cpu/cpu/*
+add wave -position insertpoint sim:/sim_cpu/cpu/pc_register/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
