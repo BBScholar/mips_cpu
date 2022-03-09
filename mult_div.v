@@ -1,4 +1,17 @@
 
+module mul_div_new(
+	clk, a, b, sel, out
+);
+
+	parameter width=32;
+
+	input clk, sel;
+	input [width-1:0] a, b;
+	output reg [2*width - 1:0] out;
+
+
+endmodule
+
 module mul_div(
 	clk, mult, s, a, b, hilo
 );

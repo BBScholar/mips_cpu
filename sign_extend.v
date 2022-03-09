@@ -10,11 +10,8 @@ module sign_extend
 	
 	input wire [in_width - 1:0] in;
 	
-	output reg [out_width - 1:0] out;
+	output [out_width - 1:0] out;
 	
-	always @ (in)
-	begin
-		out = {{diff{in[in_width - 1]}}, in};
-	end
-
+	assign out = {{diff{in[in_width - 1]}}, in};
+	
 endmodule

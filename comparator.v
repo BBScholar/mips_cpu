@@ -1,19 +1,24 @@
 
 
-module comparitor(a, b, lt, eq, neq, gt, lte, gte);
+module comparitor(
+	a, b, is_unsigned,
+	lt, eq, neq, gt, lte, gte
+);
 	parameter width = 32;
-	
+
+	input is_unsigned;	
 	input [width-1:0] a,b;
-	
-	output wire lt, neq, eq, gt, lte, gte;
-	
-	assign lt = (a < b);
+
+	output wire eq, neq;
+	output wire lt, gt, lte, gte;
+
 	assign eq = (a == b);
-	assign gt = (a > b);
-	
 	assign neq = !eq;
-	
-	assign lte = lt & eq;
-	assign gte = gt & eq;
-	
+
+	assign lt = (($unsigned(a) < $unsigned(b)) & is_unsigned) | (($signed(a) < $signed(b)) & !is_unsigned);
+	assign gt = !lt & !eq;
+
+	assign lte = !gt;
+	assign gte = !lt;
+
 endmodule

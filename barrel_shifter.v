@@ -1,5 +1,4 @@
 
-
 // source: https://www.researchgate.net/publication/228463169_Design_of_a_reversible_bidirectional_barrel_shifter
 module barrel_shifter(
 	in, shift, left, logical, out

@@ -1,7 +1,7 @@
 
 
 module sim_memory(clk, address, write, read_data, write_data);
-	localparam memory_size = 'h800000;
+	localparam memory_size = 'h1000;
 
 	input clk, write;
 	input [31:0] address, write_data;
@@ -20,7 +20,8 @@ module sim_memory(clk, address, write, read_data, write_data);
 			memory[i] <= 0;
 	end
 	
-	always @ (posedge clk) begin
+	// not sure if this should be posedge or both edges
+	always @ (clk) begin
 		if(write) begin
 			memory[word_address] <= write_data;
 		end else begin

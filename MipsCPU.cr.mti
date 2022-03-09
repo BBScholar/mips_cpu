@@ -33,6 +33,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	ALU
 
+} {} {}} C:/Users/bens/Documents/MipsCPU/hilo.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/hilo.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hilo
+
+Top level modules:
+	hilo
+
 } {} {}} C:/Users/bens/Documents/MipsCPU/register_file.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/register_file.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module register_file
@@ -84,12 +91,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	mux4x1
 
-} {} {}} C:/Users/bens/Documents/MipsCPU/sign_extend.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/sign_extend.v
+} {} {}} C:/Users/bens/Documents/MipsCPU/adder.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/adder.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module sign_extend
+-- Compiling module adder
 
 Top level modules:
-	sign_extend
+	adder
 
 } {} {}} C:/Users/bens/Documents/MipsCPU/comparator.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/comparator.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -98,12 +105,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	comparitor
 
-} {} {}} C:/Users/bens/Documents/MipsCPU/adder.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/adder.v
+} {} {}} C:/Users/bens/Documents/MipsCPU/sign_extend.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/sign_extend.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module adder
+-- Compiling module sign_extend
 
 Top level modules:
-	adder
+	sign_extend
 
 } {} {}} C:/Users/bens/Documents/MipsCPU/alu_control.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/alu_control.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -118,12 +125,5 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	barrel_shifter
-
-} {} {}} C:/Users/bens/Documents/MipsCPU/simulation_memory.v {1 {vlog -work work -stats=none C:/Users/bens/Documents/MipsCPU/simulation_memory.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module sim_memory
-
-Top level modules:
-	sim_memory
 
 } {} {}}
